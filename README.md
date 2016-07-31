@@ -5,6 +5,7 @@ Print the 10 most recently posted books using the following api:
 
  http://www.paperbackswap.com/developers/
 
+ - Clone/Fork a copy of this project and start from the **initial commit** branch
  - Look through the api documentation
  - Use the JSON version of the api 
  - There should be an endpoint for the 10 most recently posted books.
