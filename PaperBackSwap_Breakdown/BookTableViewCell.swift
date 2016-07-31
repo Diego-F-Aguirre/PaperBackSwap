@@ -16,13 +16,4 @@ class BookTableViewCell: UITableViewCell {
     @IBOutlet weak var bookRating: UILabel!
  
     
-    func updateBookCell(book: Book) {
-        bookTitle.text = book.title
-        bookAuthor.text = book.author
-        bookRating.text = book.rating
-        
-        ImageController.imageForURL(book.imageEndpoint) { (image) in
-            self.bookCoverImage.image = image
-        }
-    }
 }

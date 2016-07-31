@@ -12,10 +12,6 @@
 		BC0447931D49B8EE0092F0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0447921D49B8EE0092F0A8 /* Assets.xcassets */; };
 		BC0447961D49B8EE0092F0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0447941D49B8EE0092F0A8 /* LaunchScreen.storyboard */; };
 		BC0447A21D49BB360092F0A8 /* RecentBookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447A11D49BB360092F0A8 /* RecentBookListTableViewController.swift */; };
-		BC0447A51D49BB7B0092F0A8 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447A41D49BB7B0092F0A8 /* NetworkController.swift */; };
-		BC0447A71D49BBA60092F0A8 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447A61D49BBA60092F0A8 /* ImageController.swift */; };
-		BC0447A91D49BBD10092F0A8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447A81D49BBD10092F0A8 /* Book.swift */; };
-		BC0447AB1D49BDB80092F0A8 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447AA1D49BDB80092F0A8 /* BookController.swift */; };
 		BC0447AD1D49BDFF0092F0A8 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0447AC1D49BDFF0092F0A8 /* BookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,10 +23,6 @@
 		BC0447951D49B8EE0092F0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC0447971D49B8EE0092F0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0447A11D49BB360092F0A8 /* RecentBookListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentBookListTableViewController.swift; sourceTree = "<group>"; };
-		BC0447A41D49BB7B0092F0A8 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		BC0447A61D49BBA60092F0A8 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
-		BC0447A81D49BBD10092F0A8 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		BC0447AA1D49BDB80092F0A8 /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
 		BC0447AC1D49BDFF0092F0A8 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,9 +71,6 @@
 		BC04479D1D49B8F80092F0A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BC0447A41D49BB7B0092F0A8 /* NetworkController.swift */,
-				BC0447A61D49BBA60092F0A8 /* ImageController.swift */,
-				BC0447AA1D49BDB80092F0A8 /* BookController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -98,7 +87,6 @@
 		BC04479F1D49B9030092F0A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC0447A81D49BBD10092F0A8 /* Book.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -182,13 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0447AB1D49BDB80092F0A8 /* BookController.swift in Sources */,
 				BC04478C1D49B8EE0092F0A8 /* AppDelegate.swift in Sources */,
 				BC0447A21D49BB360092F0A8 /* RecentBookListTableViewController.swift in Sources */,
 				BC0447AD1D49BDFF0092F0A8 /* BookTableViewCell.swift in Sources */,
-				BC0447A51D49BB7B0092F0A8 /* NetworkController.swift in Sources */,
-				BC0447A91D49BBD10092F0A8 /* Book.swift in Sources */,
-				BC0447A71D49BBA60092F0A8 /* ImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +322,7 @@
 				BC04479C1D49B8EE0092F0A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
