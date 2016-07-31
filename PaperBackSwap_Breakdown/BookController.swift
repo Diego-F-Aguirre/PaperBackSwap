@@ -10,6 +10,8 @@ import Foundation
 
 class BookController {
     
+    static let baseURL = NSURL(string: "http://www.paperbackswap.com/api/v2/index.php?")
+    
     weak var delegate: BookControllerDelegate?
     
     var books: [Book] = [] {
@@ -20,13 +22,13 @@ class BookController {
     
     init() {
         fetchRecentBooks { (books) in
-            //
+            self.books = books 
         }
     }
     
-    static let baseURL = NSURL(string: "http://www.paperbackswap.com/api/v2/index.php?")
-    
-    func fetchRecentBooks(completion: (books: [Book]) -> Void) {
+    func fetchRecentBooks(completion: ((books: [Book]) -> Void)?) {
+        
+        guard let completion = completion else { return }
         
         guard let url = BookController.baseURL else {
             print("Error: No URL found")
